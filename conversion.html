@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number conversion</title>
+</head>
+<body>
+
+    <h3 id="binary"></h3>
+    <h3 id="decimal"></h3>
+    <h3 id="octal"></h3>
+    <h3 id="hexadecimal"></h3>
+   
+    <script>
+        // const number = document.getElementById("input");
+        const number = parseInt(prompt("enter a number that convert"))
+        const binary = number.toString(2);
+        const decimal = number.toString(10)
+        const octal = number.toString(8)
+        const hexadecimal = number.toString(16)
+
+        document.getElementById("binary").innerHTML = "Binary: " + binary;
+        document.getElementById("octal").innerHTML = "octal: " + octal ;
+        document.getElementById("decimal").innerHTML = "decimal: " + decimal;
+        document.getElementById("hexadecimal").innerHTML = "hexadecimal: " + hexadecimal ;
+        
+    </script>
+</body>
+</html>
